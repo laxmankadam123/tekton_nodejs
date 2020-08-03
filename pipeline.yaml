@@ -6,6 +6,8 @@ spec:
   resources:
     - name: git-source
       type: git
+    - name: builtImage
+      type: image
   params:
     - name: pathToContext
       description: The path to the build context, used by Kaniko - within the workspace
@@ -34,6 +36,9 @@ spec:
       inputs:
         - name: git-source
           resource: git-source
+      outputs:
+        - name: builtImage
+          resource: builtImage
   - name: deploy-application
     taskRef:
       name: deploy-application
@@ -52,3 +57,6 @@ spec:
       inputs:
         - name: git-source
           resource: git-source
+      outputs:
+        - name: builtImage
+          resource: builtImage
