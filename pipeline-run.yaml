@@ -9,6 +9,9 @@ spec:
     - name: git-source
       resourceRef:
         name: git
+    - name: builtImage
+      resourceRef:
+        name: pushimage
   params:
     - name: pathToContext
       value: "src"
