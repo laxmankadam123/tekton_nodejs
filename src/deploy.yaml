@@ -35,5 +35,3 @@ spec:
           image: datamato123/app:0.0.1
           ports:
           - containerPort: 3300
-      imagePullSecrets:
-        - name: dockerhub-credential
