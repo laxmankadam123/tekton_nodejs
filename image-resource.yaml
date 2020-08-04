@@ -6,4 +6,4 @@ spec:
   type: image
   params:
     - name: url
-      value: 060696/app
+      value: datamato123/app
