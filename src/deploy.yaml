@@ -31,7 +31,7 @@ spec:
     spec:
       containers:
       - name: app
-        image: datamato123/app:1.0
+        image: datamato123/app
       imagePullSecrets:
         - name: dockerhub-credential
         ports:
